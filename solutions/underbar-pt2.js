@@ -97,11 +97,11 @@ const shuffle = function(arr) {
   while (currentIdx) {
     swapIdx = Math.floor(Math.random() * currentIdx);
 
-    currentIdx -= 1;
-
     temp = out[currentIdx];
     out[currentIdx] = out[swapIdx];
     out[swapIdx] = temp;
+    
+    currentIdx -= 1;
   }
 
   return out;
